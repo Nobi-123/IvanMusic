@@ -27,8 +27,6 @@ from pyrogram.types import BotCommand
 from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from ShrutiMusic import LOGGER, app, userbot
-# bad
-from ShrutiMusic.core.call import Nand
 
 # good
 from .core.call import Nand
