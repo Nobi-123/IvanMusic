@@ -81,8 +81,9 @@ AUTO_LEAVING_ASSISTANT = bool(os.getenv("AUTO_LEAVING_ASSISTANT", False))
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🖼️ Image URLs (Customizable)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/v1asa0.jpg"
+START_IMG_URL = os.getenv(
+    "START_IMG_URL",
+    "https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4",
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://files.catbox.moe/ydvqvu.jpg"
