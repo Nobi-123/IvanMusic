@@ -67,11 +67,11 @@ SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET")
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # 🧵 Session Strings (Pyrogram V2)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-STRING1 = os.getenv("STRING_SESSION", "")
-STRING2 = os.getenv("STRING_SESSION2")
-STRING3 = os.getenv("STRING_SESSION3")
-STRING4 = os.getenv("STRING_SESSION4")
-STRING5 = os.getenv("STRING_SESSION5")
+STRING1 = os.getenv("STRING_SESSION", None)
+STRING2 = os.getenv("STRING_SESSION2", None)
+STRING3 = os.getenv("STRING_SESSION3", None)
+STRING4 = os.getenv("STRING_SESSION4", None)
+STRING5 = os.getenv("STRING_SESSION5", None)
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # ⚙️ Runtime Configurations
