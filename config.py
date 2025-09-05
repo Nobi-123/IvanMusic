@@ -85,7 +85,7 @@ START_IMG_URL = os.getenv(
     "START_IMG_URL",
     "https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4",
 )
-PING_IMG_URL = getenv(
+PING_IMG_URL = os.getenv(
     "PING_IMG_URL", "https://files.catbox.moe/ydvqvu.jpg"
 )
 PLAYLIST_IMG_URL = "https://files.catbox.moe/p3s1jd.jpg"
