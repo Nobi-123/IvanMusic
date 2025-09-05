@@ -123,7 +123,7 @@ async def setup_bot_commands():
         # Set bot commands
         await app.set_bot_commands(COMMANDS)
         LOGGER("ShrutiMusic").info("Bot commands set successfully!")
-
+        
     except Exception as e:
         LOGGER("ShrutiMusic").error(f"Failed to set bot commands: {str(e)}")
 
@@ -151,7 +151,7 @@ async def init():
         pass
 
     await app.start()
-
+    
     # Setup bot commands during startup
     await setup_bot_commands()
 
