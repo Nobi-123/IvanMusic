@@ -1,25 +1,3 @@
-# Copyright (c) 2025 Nand Yaduwanshi <NoxxOP>
-# Location: Supaul, Bihar
-#
-# All rights reserved.
-#
-# This code is the intellectual property of Nand Yaduwanshi.
-# You are not allowed to copy, modify, redistribute, or use this
-# code for commercial or personal projects without explicit permission.
-#
-# Allowed:
-# - Forking for personal learning
-# - Submitting improvements via pull requests
-#
-# Not Allowed:
-# - Claiming this code as your own
-# - Re-uploading without credit or permission
-# - Selling or using commercially
-#
-# Contact for permissions:
-# Email: badboy809075@gmail.com
-
-
 import asyncio
 import importlib
 from pyrogram import idle
@@ -27,9 +5,7 @@ from pyrogram.types import BotCommand
 from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from ShrutiMusic import LOGGER, app, userbot
-
-# good
-from .core.call import Nand
+from ShrutiMusic.core.call import Nand
 from ShrutiMusic.misc import sudo
 from ShrutiMusic.plugins import ALL_MODULES
 from ShrutiMusic.utils.database import get_banned_users, get_gbanned
@@ -125,7 +101,7 @@ async def setup_bot_commands():
         # Set bot commands
         await app.set_bot_commands(COMMANDS)
         LOGGER("ShrutiMusic").info("Bot commands set successfully!")
-        
+
     except Exception as e:
         LOGGER("ShrutiMusic").error(f"Failed to set bot commands: {str(e)}")
 
@@ -153,7 +129,7 @@ async def init():
         pass
 
     await app.start()
-    
+
     # Setup bot commands during startup
     await setup_bot_commands()
 
@@ -189,15 +165,3 @@ async def init():
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(init())
-
-
-# ©️ Copyright Reserved - @NoxxOP  Nand Yaduwanshi
-
-# ===========================================
-# ©️ 2025 Nand Yaduwanshi (aka @NoxxOP)
-# 🔗 GitHub : https://github.com/NoxxOP/ShrutiMusic
-# 📢 Telegram Channel : https://t.me/ShrutiBots
-# ===========================================
-
-
-# ❤️ Love From ShrutiBots 
